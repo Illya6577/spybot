@@ -15,14 +15,14 @@ from telegram.ext import (
 # -------------------------------------------------------
 # Налаштування
 # -------------------------------------------------------
-BOT_TOKEN = "7479681245:AAFTDpmcxbkyhoXT1Hf3vMmOkn6hDOLvr_0" 
+BOT_TOKEN = "token" 
 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s"
 )
 
-ALLOWED_CHATS = {1364956453}
+ALLOWED_CHATS = {id}
 
 def _chat_allowed(update: Update) -> bool:
     if not ALLOWED_CHATS:
@@ -148,3 +148,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
